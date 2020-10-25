@@ -84,7 +84,9 @@ public class Tokenizer {
         // 直到查看下一个字符不是数字或字母为止:
         while(Character.isLetter(peek)||Character.isLetter(peek)){
             // -- 前进一个字符，并存储这个字符
+//            System.out.print(it.nextChar());
             tokenStr.append(it.nextChar());
+            peek = it.peekChar();
         }
         //
         // 尝试将存储的字符串解释为关键字
