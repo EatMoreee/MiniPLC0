@@ -104,15 +104,15 @@ public class Tokenizer {
     private Token Reserve(StringBuffer tokenStr,Pos startPos,Pos endPos) {
         String str = tokenStr.toString();
         switch (tokenStr.toString()){
-            case "Begin":
+            case "begin":
                 return new Token(TokenType.Begin,str,startPos,endPos);
-            case "End":
+            case "end":
                 return new Token(TokenType.End,str,startPos,endPos);
-            case "Var":
+            case "var":
                 return new Token(TokenType.Var,str,startPos,endPos);
-            case "Const":
+            case "const":
                 return new Token(TokenType.Const,str,startPos,endPos);
-            case "Print":
+            case "print":
                 return new Token(TokenType.Print,str,startPos,endPos);
             default:
                 return null;
